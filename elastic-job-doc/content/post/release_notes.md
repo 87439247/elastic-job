@@ -6,6 +6,20 @@ weight=1
 
 # Release Notes
 
+## 1.0.6
+
+### 功能提升
+
+1. [ISSUE #71](https://github.com/dangdangdotcom/elastic-job/issues/71) 作业关闭功能（shutdown）
+1. [ISSUE #72](https://github.com/dangdangdotcom/elastic-job/issues/72) 关闭的作业可删除
+1. [ISSUE #81](https://github.com/dangdangdotcom/elastic-job/issues/81) 使用集中清理作业上次结束状态代替各自清理，各自清理可能导致作业机下线而产生未清理的结束状态
+
+### 缺陷修正
+
+1. [ISSUE #74](https://github.com/dangdangdotcom/elastic-job/issues/74) 流式处理且失效转移时，失效转移的分片项不能执行一次即停止
+1. [ISSUE #77](https://github.com/dangdangdotcom/elastic-job/issues/77) dataflow类型作业，fetchData如果有数据，则应与processData成对执行
+1. [ISSUE #78](https://github.com/dangdangdotcom/elastic-job/issues/78) Spring方式配置作业监听启用AOP导致不能正常使用问题
+
 ## 1.0.5
 
 ### 功能提升
@@ -19,6 +33,7 @@ weight=1
 
 1. [ISSUE #61](https://github.com/dangdangdotcom/elastic-job/issues/61) 分片和主节点选举同时发生时，死锁问题解决
 1. [ISSUE #63](https://github.com/dangdangdotcom/elastic-job/issues/63) 获取作业TreeCache时可能会获取到前缀相同的其他作业的TreeCache
+1. [ISSUE #69](https://github.com/dangdangdotcom/elastic-job/issues/69) 分片时如在Zk中有的作业服务器sharding节点不存在将导致无法重新分片
 
 ### 结构调整
 

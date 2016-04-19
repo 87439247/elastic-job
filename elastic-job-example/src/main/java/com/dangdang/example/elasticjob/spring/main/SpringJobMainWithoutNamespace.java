@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright 1999-2015 dangdang.com.
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,9 +19,9 @@ package com.dangdang.example.elasticjob.spring.main;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public final class SpringJobMainWthoutNamespace {
+public final class SpringJobMainWithoutNamespace {
     
-    private SpringJobMainWthoutNamespace() {
+    private SpringJobMainWithoutNamespace() {
     }
     
     // CHECKSTYLE:OFF

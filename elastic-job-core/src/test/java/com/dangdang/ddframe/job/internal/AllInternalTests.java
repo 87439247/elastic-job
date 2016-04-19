@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright 1999-2015 dangdang.com.
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -40,6 +40,7 @@ import com.dangdang.ddframe.job.internal.monitor.MonitorServiceDisableTest;
 import com.dangdang.ddframe.job.internal.monitor.MonitorServiceEnableTest;
 import com.dangdang.ddframe.job.internal.offset.OffsetNodeTest;
 import com.dangdang.ddframe.job.internal.offset.OffsetServiceTest;
+import com.dangdang.ddframe.job.internal.schedule.JobFacadeTest;
 import com.dangdang.ddframe.job.internal.schedule.SchedulerFacadeTest;
 import com.dangdang.ddframe.job.internal.schedule.JobRegistryTest;
 import com.dangdang.ddframe.job.internal.schedule.JobTriggerListenerTest;
@@ -102,7 +103,8 @@ import org.junit.runners.Suite.SuiteClasses;
     MonitorServiceDisableTest.class, 
     GuaranteeNodeTest.class,
     GuaranteeServiceTest.class, 
-    SchedulerFacadeTest.class
+    SchedulerFacadeTest.class,
+    JobFacadeTest.class
     })
 public final class AllInternalTests {
 }

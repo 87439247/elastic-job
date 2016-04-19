@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright 1999-2015 dangdang.com.
  * <p>
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,22 +15,14 @@
  * </p>
  */
 
-package com.dangdang.ddframe.job.api;
+package com.dangdang.ddframe.job.spring;
 
-/**
- * 可停止的作业或目标.
- * 
- * @author caohao
- */
-public interface Stopable {
+import org.springframework.test.context.ContextConfiguration;
+
+@ContextConfiguration(locations = "classpath:META-INF/job/withNamespaceAndListenerAndJdkDynamicProxy.xml")
+public final class WithNamespaceAndListenerAndJdkDynamicProxyTest extends AbstractJobSpringIntegrateTest {
     
-    /**
-     * 停止运行中的作业或目标.
-     */
-    void stop();
-    
-    /**
-     * 恢复运行作业或目标.
-     */
-    void resume();
+    public WithNamespaceAndListenerAndJdkDynamicProxyTest() {
+        super("simpleElasticJob_namespace_listener_jdk_proxy", "throughputDataFlowElasticJob_namespace_listener_jdk_proxy");
+    }
 }
